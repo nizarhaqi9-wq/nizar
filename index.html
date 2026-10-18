@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Irfan — Developer &amp; Builder</title>
+<meta name="description" content="Portofolio Irfan — developer mobile & web, pembuat aplikasi Android, Unity, dan tools produktivitas." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<header class="nav" id="nav">
+  <a href="#hero" class="logo">nizar<span>.dev</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">Tentang</a>
+    <a href="#skills">Keahlian</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact" class="nav-cta">Hubungi</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="dot"></span> Tersedia untuk proyek baru</p>
+      <h1>
+        Halo, saya <span class="grad">nizar</span>.<br />
+        Saya membangun aplikasi<br />
+        yang <em>enak dipakai</em>.
+      </h1>
+      <p class="lead">
+        Developer mobile &amp; web yang fokus pada produk kecil yang rapi:
+        aplikasi Android, game Unity, dan tools yang menyelesaikan masalah nyata.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Ngobrol Yuk</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong data-count="12">0</strong><span>Proyek selesai</span></div>
+        <div class="stat"><strong data-count="4">0</strong><span>Tahun ngoding</span></div>
+        <div class="stat"><strong data-count="6">0</strong><span>Tech stack</span></div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="card-top">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="card-title">terminal</span>
+      </div>
+      <pre class="code"><code><span class="c-key">const</span> dev = {
+  nama: <span class="c-str">"Irfan"</span>,
+  peran: <span class="c-str">"Mobile &amp; Web Dev"</span>,
+  stack: [<span class="c-str">"Flutter"</span>, <span class="c-str">"Kotlin"</span>,
+          <span class="c-str">"React"</span>, <span class="c-str">"Unity"</span>],
+  fokus: <span class="c-str">"produk yang benar-benar dipakai"</span>,
+  status: <span class="c-bool">true</span> <span class="c-com">// open to work</span>
+};</code></pre>
+      <div class="card-foot">
+        <span class="pulse"></span> build passing · 0 errors
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-head reveal">
+      <span class="num">01</span>
+      <h2>Tentang Saya</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Saya suka membuat sesuatu dari nol — dari ide di notes sampai aplikasi yang
+          bisa dibuka orang lain. Kebanyakan waktu saya habis di Android, Flutter,
+          dan Unity, tapi saya juga nyaman membangun web dengan React atau HTML/CSS murni.
+        </p>
+        <p>
+          Prinsip kerja saya sederhana: <strong>kerjakan hal kecil dengan benar</strong>,
+          ukur hasilnya, lalu perbaiki. Bukan sekadar "jalan di laptop saya".
+        </p>
+        <ul class="facts">
+          <li><span>Lokasi</span> Indonesia · Remote friendly</li>
+          <li><span>Fokus</span> Mobile apps, game, web tools</li>
+          <li><span>Bahasa</span> Indonesia, English</li>
+        </ul>
+      </div>
+      <div class="about-visual reveal">
+        <div class="avatar">I</div>
+        <div class="badge-float b1">⚡ Fast learner</div>
+        <div class="badge-float b2">🧩 Problem solver</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <span class="num">02</span>
+      <h2>Keahlian</h2>
+    </div>
+    <div class="skills-grid">
+      <article class="skill-card reveal">
+        <div class="skill-icon">📱</div>
+        <h3>Mobile</h3>
+        <p>Flutter, Kotlin, Jetpack Compose, integrasi native &amp; offline-first.</p>
+        <div class="bar"><i style="--w:90%"></i></div>
+      </article>
+      <article class="skill-card reveal">
+        <div class="skill-icon">🌐</div>
+        <h3>Web</h3>
+        <p>HTML/CSS/JS, React, responsive layout, animasi ringan tanpa bloated libs.</p>
+        <div class="bar"><i style="--w:82%"></i></div>
+      </article>
+      <article class="skill-card reveal">
+        <div class="skill-icon">🎮</div>
+        <h3>Game</h3>
+        <p>Unity (C#), game logic, UI in-game, optimasi build Android.</p>
+        <div class="bar"><i style="--w:75%"></i></div>
+      </article>
+      <article class="skill-card reveal">
+        <div class="skill-icon">🛠️</div>
+        <h3>Tools</h3>
+        <p>Git, Linux CLI, REST API, automation script, debugging di device nyata.</p>
+        <div class="bar"><i style="--w:85%"></i></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <span class="num">03</span>
+      <h2>Proyek Pilihan</h2>
+    </div>
+    <div class="projects">
+      <article class="project reveal">
+        <div class="project-thumb t1"><span>♟️</span></div>
+        <div class="project-body">
+          <div class="tags"><span>Android</span><span>Kotlin</span></div>
+          <h3>ChessLens</h3>
+          <p>Aplikasi analisis catur dengan engine lokal dan UI papan yang ringan di perangkat kelas menengah.</p>
+          <a href="#" class="project-link">Detail <span>→</span></a>
+        </div>
+      </article>
+      <article class="project reveal">
+        <div class="project-thumb t2"><span>💳</span></div>
+        <div class="project-body">
+          <div class="tags"><span>Web</span><span>API</span></div>
+          <h3>Itopup</h3>
+          <p>Dashboard top-up dengan alur checkout sederhana, status transaksi real-time, dan riwayat pesanan.</p>
+          <a href="#" class="project-link">Detail <span>→</span></a>
+        </div>
+      </article>
+      <article class="project reveal">
+        <div class="project-thumb t3"><span>🧠</span></div>
+        <div class="project-body">
+          <div class="tags"><span>Unity</span><span>C#</span></div>
+          <h3>Puzzle Prototype</h3>
+          <p>Prototipe game puzzle 3D untuk validasi mekanik inti sebelum masuk produksi penuh.</p>
+          <a href="#" class="project-link">Detail <span>→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="contact-box reveal">
+      <h2>Punya ide? <span class="grad">Mari kita bangun.</span></h2>
+      <p>Saya terbuka untuk freelance, kolaborasi, atau sekadar diskusi teknis.</p>
+      <div class="contact-actions">
+        <a href="https://www.instagram.com" class="btn btn-primary">hello@example.com</a>
+        <a href="#" class="btn btn-ghost">GitHub ↗</a>
+        <a href="#" class="btn btn-ghost">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Irfan. Dibuat dengan HTML, CSS, dan sedikit kopi.</p>
+  <a href="#hero">Kembali ke atas ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
